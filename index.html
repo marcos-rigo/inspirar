@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InspirAR Lab - Innovación en Inteligencia Artificial</title>
+
+    Bootstrap 5 CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    Font Awesome para iconos
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    Google Fonts
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    CSS personalizado
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    Partículas de fondo
+    <div id="particles-container"></div>
+
+    Header
+    <header class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="logo-text">Inspir<span class="ar-highlight">AR</span> Lab</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Temáticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#highlights">Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            El Futuro de la Argentina se contruye colectivamente <br><span
+                                class="ar-highlight">Inteligencia Humana </span>
+                            e <span class="ai-highlight">Inteligencia Artificial</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Transformamos ideas en experiencias y la experiencia en innovación.
+                            Descubre el poder de la interoperabilidad humana con el InspirAR Lab.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-primary btn-glow">
+                                <i class="fas fa-rocket me-2"></i>Explorar
+                            </a>
+                            <!-- <a href="#services" class="btn btn-outline-light ms-3">
+                                <i class="fas fa-play me-2"></i>Ver Demo
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="floating-element element-1"></div>
+                        <div class="floating-element element-2"></div>
+                        <div class="floating-element element-3"></div>
+                        <div class="central-orb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">Innovación que <span class="ar-highlight">Inspira</span></h2>
+                        <p class="section-description">
+                            En InspirAR Lab, fusionamos la innovación pública, tecnologica, académica y ciudadana.
+                            Nuestro equipo de expertos busca construir con los participantes de nuestras experiencias
+                            insumos que impacten en el Estado, Academia, Sector Privado y la Ciudadanía
+                            del siglo XXI.
+                        </p>
+                        <!-- <div class="stats-row">
+                            <div class="stat-item">
+                                <h3 class="stat-number">100+</h3>
+                                <p class="stat-label">Proyectos Completados</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number">50+</h3>
+                                <p class="stat-label">Clientes Satisfechos</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number">5+</h3>
+                                <p class="stat-label">Años de Experiencia</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-visual">
+                        <div class="tech-grid">
+                            <div class="tech-item" data-tech="AI">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="tech-item" data-tech="AR">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="tech-item" data-tech="ML">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="tech-item" data-tech="VR">
+                                <i class="fas fa-vr-cardboard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Experiencia inmersiva en <span class="ai-highlight">Tucumán</span></h2>
+                <p class="section-description">Conversatorio inspirador</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4 class="service-title">Software, servicios informáticos y digitales</h4>
+                        <p class="service-description">
+                            Experiencias inmersivas que combinan el mundo real con elementos digitales interactivos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 class="service-title">Inteligencia Artificial</h4>
+                        <p class="service-description">
+                            Algoritmos inteligentes que aprenden y se adaptan para optimizar procesos empresariales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 class="service-title">Inteligencia Humana</h4>
+                        <p class="service-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam distinctio, dolorem
+                            aspernatur ipsum, harum autem incidunt quae quo minima quasi fugit architecto error labore
+                            veniam ut, unde nostrum eius?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="service-title">Innovación Pública</h4>
+                        <p class="service-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sequi dignissimos,
+                            cupiditate iure pariatur fugit facilis expedita nostrum porro officiis voluptatum. Quaerat
+                            cupiditate eius optio debitis officiis accusantium nam ex.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4 class="service-title">Economía del Conocimiento</h4>
+                        <p class="service-description">
+                            Asesoramiento estratégico para implementar tecnologías emergentes en tu empresa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="highlights" class="highlights-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nuestros <span class="accent-highlight">Disertantes</span> del Conversatorio
+                </h2>
+                <p class="section-description">Expertos que nos acompañan en el Laboratorio</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="highlight-card">
+                        <div class="highlight-image">
+                            <!-- <div class="project-preview project-1"></div> -->
+                            <img class="project-preview" src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="highlight-content">
+                            <h4 class="highlight-title">José Farhat</h4>
+                            <p class="highlight-description">
+                                Secretario de Estado de Participación Ciudadana – Gobierno de Tucumán, Argentina <br>
+                                Coordinador grupo de Formación Ciudadana – RAGA Internacional <br>
+                                Co-Designer de InspirAR Lab
+                            </p>
+                            <!-- <div class="highlight-tags">
+                                <span class="tag">AR</span>
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">Mobile</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="highlight-card">
+                        <div class="highlight-image">
+                            <!-- <div class="project-preview project-2"></div> -->
+                            <img class="project-preview" src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="highlight-content">
+                            <h4 class="highlight-title">Ana Carina Rodriguez</h4>
+                            <p class="highlight-description">
+                                Subsecretaria de Innovación de la Municipalidad de Escobar <br>
+                                Co-Designer de InspirAR Lab
+                            </p>
+                            <!-- <div class="highlight-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Analytics</span>
+                                <span class="tag">Dashboard</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="highlight-card">
+                        <div class="highlight-image">
+                            <!-- <div class="project-preview project-3"></div> -->
+                            <img class="project-preview" src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="highlight-content">
+                            <h4 class="highlight-title"></h4>Gustavo Giorgetti
+                            <p class="highlight-description">
+                                Fundador y CEO de ThinkNet
+                            </p>
+                            <!-- <div class="highlight-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Smart City</span>
+                                <span class="tag">AI</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="highlight-card">
+                        <div class="highlight-image">
+                            <!-- <div class="project-preview project-3"></div> -->
+                            <img class="project-preview" src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="highlight-content">
+                            <h4 class="highlight-title">Juan Pablo Conte</h4>
+                            <p class="highlight-description">
+                                Director Global de INNOVA
+                            </p>
+                            <!-- <div class="highlight-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Smart City</span>
+                                <span class="tag">AI</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="cta" class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="cta-content">
+                        <h2 class="cta-title">¿Listo para <span class="ar-highlight">sumarte al </span> InspirAR Lab?
+                        </h2>
+                        <p class="cta-description">
+                            Únete a la revolución tecnológica. Contacta con nuestro equipo de expertos
+                            y descubre cómo podemos llevar tu proyecto al siguiente nivel.
+                        </p>
+                        <a href="#contact" class="btn btn-ai btn-lg btn-glow">
+                            <i class="fas fa-rocket me-2"></i>Comenzar Proyecto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact" class="footer-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <h4 class="footer-logo">Inspir<span class="ar-highlight">AR</span> Lab</h4>
+                        <p class="footer-description">
+                            Innovación ciudadana que inspira el futuro.
+                            Creamos experiencias colaborativas extraordinarias.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Temáticas</h5>
+                    <ul class="footer-links">
+                        <li><a href="#services">Innovación Pública </a></li>
+                        <li><a href="#services">Inteligencia Artificial</a></li>
+                        <!-- <li><a href="#services">Apps Móviles</a></li>
+                        <li><a href="#services">Consultoría</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">InspirAR Lab</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">Sobre Nosotros</a></li>
+                        <li><a href="#highlights">Disertantes</a></li>
+                        <!-- <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#">Blog</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">Contacto</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope me-2"></i>hola@inspirarlab.com</p>
+                        <p><i class="fas fa-phone me-2"></i>+1 (54) 381 4 333555</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Tucumán, Argentina</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">
+                        © 2025 InspirAR Lab. Todos los derechos reservados. <br>
+                        Diseñado con <span class="accent-highlight">❤️</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

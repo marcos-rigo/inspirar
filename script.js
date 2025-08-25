@@ -303,3 +303,24 @@ window.addEventListener('load', function() {
         }, 500);
     }, 2000);
 });
+
+
+/* Cerrar el menú desplegable al hacer clic en un enlace de navegación */
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarCollapse = document.getElementById('navbarNav');
+    
+    if (navLinks && navbarCollapse) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const isCollapsed = navbarCollapse.classList.contains('show');
+                if (isCollapsed) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+    }
+});

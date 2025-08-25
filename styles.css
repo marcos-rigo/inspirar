@@ -297,16 +297,16 @@ body {
 }
 
 .section-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 3rem;
+    /* text-align: center;
+    max-width: 600px; */
+    margin: 0 auto 1rem;
 }
 
 /* ===== ABOUT SECTION ===== */
 .about-section {
-    padding: 100px 0;
+    padding: 0px 0;
     background: linear-gradient(135deg, rgba(79, 232, 176, 0.05) 0%, rgba(156, 108, 255, 0.05) 100%);
 }
 

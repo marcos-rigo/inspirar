@@ -775,10 +775,10 @@ body {
   background-color: #ffffff;   /* fondo blanco */
   padding: 15px;               /* espacio alrededor del logo */
   border-radius: 12px;         /* bordes redondeados */
-  display: inline-block;       /* se ajusta al tamaño del logo */
+  /* display: inline-block;       se ajusta al tamaño del logo */
 }
 .logo-aliado img {
-  max-width: 500px; 
+  /* max-width: 500px;  */
   height: auto;
   filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.8));
 }

@@ -439,9 +439,20 @@ body {
 }
 
 .highlight-image {
-    height: 200px;
+    /* height: 200px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
+     /* Define un tamaño fijo para el contenedor */
+    width: 100%;
+    height: 300px; /* Puedes ajustar esta altura según tu diseño */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga */
+}
+
+.highlight-image img {
+    /* Mantiene la proporción de la imagen mientras llena el contenedor */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-preview {
@@ -758,4 +769,25 @@ body {
 /* Estilo para el botón hamburguesa al pasar el mouse (opcional) */
 .navbar-toggler:hover {
     border-color: white !important;
+}
+
+.logo-aliado {
+  background-color: #ffffff;   /* fondo blanco */
+  padding: 15px;               /* espacio alrededor del logo */
+  border-radius: 12px;         /* bordes redondeados */
+  display: inline-block;       /* se ajusta al tamaño del logo */
+}
+.logo-aliado img {
+  max-width: 500px; 
+  height: auto;
+  filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.8));
+}
+
+/* Código para solucionar el desbordamiento de la barra de navegación en móviles */
+@media (max-width: 768px) {
+    #navbar .container {
+        /* Elimina el padding lateral que causa el desbordamiento en móviles */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }

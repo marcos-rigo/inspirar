@@ -125,6 +125,19 @@ body {
     width: 100%;
 }
 
+/* Corrección para desbordamiento de la barra de navegación en móviles */
+@media (max-width: 991px) {
+    .navbar {
+        width: 100%;
+        overflow-x: hidden; /* Asegura que la barra de navegación no desborde */
+    }
+    
+    #navbarNav {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
 /* ===== BOTONES ===== */
 .btn-glow {
     position: relative;

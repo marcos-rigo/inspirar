@@ -125,6 +125,8 @@ body {
     width: 100%;
 }
 
+
+
 /* Corrección para desbordamiento de la barra de navegación en móviles */
 @media (max-width: 991px) {
     .navbar {
@@ -796,11 +798,3 @@ body {
   filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.8));
 }
 
-/* Código para solucionar el desbordamiento de la barra de navegación en móviles */
-@media (max-width: 768px) {
-    #navbar .container {
-        /* Elimina el padding lateral que causa el desbordamiento en móviles */
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
